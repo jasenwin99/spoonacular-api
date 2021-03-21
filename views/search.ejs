@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/base.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+</head>
+
+<body>
+    <div class="bg" style="background-image: url('/images/background.jpg');">
+    </div>
+    <header>
+        <div class="page-title" style="text-align: center;">
+            Recipedia
+        </div>
+    </header>
+    <div style="margin: 0 50px; background-color: #fff; z-index: 5;" class="is-relative px-4 my-4 is-flex is-justify-content-space-between is-align-items-center">
+        <div class="my-2 is-flex is-align-items-center" >
+            <label class="label mr-4" style="margin: 0;">Search Bar</label>
+            <div class="control" >
+                <input class="input mr-4" type="text" id="query" placeholder="Input recipe name" style="width:200px">
+                <button class="button is-primary" id="search_button" style="width: 150px">Search</button>
+            </div>
+        </div>
+        <div class="is-hidden my-2 is-justify-content-center is-flex" id="control">
+            <button class="button is-primary mr-1" id="prev_button" style="width: 150px">Previous page</button>
+            <button class="button is-primary ml-1" id="next_button" style="width: 150px;">Next page</button>
+        </div>
+    </div>
+    
+    <div id="result" style="margin: 0 50px"></div>
+</body>
+<script src="javascripts/search.js"></script>
+
+</html>

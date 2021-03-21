@@ -1,0 +1,144 @@
+/* body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.picture {
+  max-width: 768px;
+  max-height: 768px;
+}
+
+.ing li{
+  font-size: large;
+  line-height: 1.5;
+}
+
+.sum{
+  font-size:large;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.detail li{
+  font-size: medium;
+  line-height: 1.5;
+}
+
+.bg{
+   filter: blur(12px);
+   height: 100%; 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   z-index: 0;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+.main{
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  top: 10%;
+  left: 10%;
+  max-height: 80%;
+  overflow-y: auto;
+  margin-bottom: 0 !important;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 25px 50px;
+  z-index: 3;
+  position: relative;
+  background-color: #fff;
+} */
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.view-card {
+  position: relative;
+  z-index: 300;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, .75);
+  max-width: 960px;
+}
+
+.view-card .card-hero {
+  display: flex;
+  column-gap: 20px;
+}
+
+.view-card .card-hero .image {
+  width: 40%;
+}
+
+.view-card .card-hero image img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.view-card .info-section {
+  width: 60%;
+}
+
+.view-card .info-section h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.view-card .info-section .sum {
+  text-align: justify;
+}
+
+.info-cards {
+  display: flex;
+  margin: 20px 0;
+}
+
+.info-cards > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-cards .info-header {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
